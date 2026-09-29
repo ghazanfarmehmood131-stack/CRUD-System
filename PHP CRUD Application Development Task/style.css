@@ -1,0 +1,236 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    font-weight: 600;
+}
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+.card {
+    transition: box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Card header styling */
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #e8f4fd !important;
+}
+.table thead th {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+}
+.table td {
+    vertical-align: middle;
+    padding: 0.75rem 1rem;
+}
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+.form-label {
+    color: #495057;
+    margin-bottom: 0.4rem;
+}
+.input-group-text {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    font-weight: 600;
+    color: #495057;
+}
+.form-control.is-invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1.2rem;
+}
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+.btn-sm {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.85rem;
+}
+.btn-outline-primary {
+    border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+    border-width: 2px;
+}
+.alert {
+    border-radius: 8px;
+    border: none;
+    padding: 1rem 1.25rem;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+}
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.7em;
+    border-radius: 5px;
+}
+.pagination .page-link {
+    border-radius: 6px;
+    margin: 0 2px;
+    border: 1px solid #dee2e6;
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9ecef;
+    color: #0a58ca;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+.modal-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+}
+.text-center.py-5 i.fa-box-open {
+    color: #adb5bd;
+    opacity: 0.6;
+}
+.form-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+.text-danger {
+    font-size: 0.9rem;
+}
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table td, .table th {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    h1.h3 {
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 767.98px) {
+    .d-flex.flex-wrap.gap-2 {
+        gap: 0.5rem !important;
+    }
+    
+    .card-header h5 {
+        font-size: 0.95rem;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media print {
+    .navbar,
+    .btn,
+    .modal,
+    footer,
+    .pagination,
+    .no-print {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    
+    body {
+        background-color: #fff;
+    }
+}

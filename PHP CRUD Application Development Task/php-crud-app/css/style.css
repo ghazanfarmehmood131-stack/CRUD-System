@@ -1,0 +1,360 @@
+/* =============================================
+   Products CRUD Application - Custom Styles
+   =============================================
+   This stylesheet provides custom styling on top of Bootstrap 5.
+   It enhances the UI with custom colors, animations, and layouts.
+   ============================================= */
+
+/* =============================================
+   BASE STYLES & RESET
+   ============================================= */
+
+/* Smooth scrolling for the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Body background and font settings */
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =============================================
+   NAVBAR CUSTOMIZATION
+   ============================================= */
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+/* Active nav link styling */
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Nav link hover effect */
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* =============================================
+   CARD STYLES
+   ============================================= */
+
+/* Card hover effect for interactivity */
+.card {
+    transition: box-shadow 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Card header styling */
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+}
+
+/* =============================================
+   TABLE STYLES
+   ============================================= */
+
+/* Table row hover animation */
+.table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #e8f4fd !important;
+}
+
+/* Table header styling */
+.table thead th {
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+}
+
+/* Table cell padding */
+.table td {
+    vertical-align: middle;
+    padding: 0.75rem 1rem;
+}
+
+/* Responsive table container */
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* =============================================
+   FORM STYLES
+   ============================================= */
+
+/* Form control focus styling */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Form label styling */
+.form-label {
+    color: #495057;
+    margin-bottom: 0.4rem;
+}
+
+/* Input group styling */
+.input-group-text {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Form validation invalid state */
+.form-control.is-invalid:focus {
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+
+/* =============================================
+   BUTTON STYLES
+   ============================================= */
+
+/* General button styling with transition */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1.2rem;
+}
+
+/* Button hover effects */
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Action buttons in table (Edit/Delete) */
+.btn-sm {
+    padding: 0.25rem 0.6rem;
+    font-size: 0.85rem;
+}
+
+/* Export button styling */
+.btn-outline-primary {
+    border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+    border-width: 2px;
+}
+
+/* =============================================
+   ALERT STYLES
+   ============================================= */
+
+/* Alert styling with icons */
+.alert {
+    border-radius: 8px;
+    border: none;
+    padding: 1rem 1.25rem;
+}
+
+.alert-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+/* =============================================
+   BADGE STYLES
+   ============================================= */
+
+/* Stock quantity badges */
+.badge {
+    font-weight: 500;
+    padding: 0.4em 0.7em;
+    border-radius: 5px;
+}
+
+/* =============================================
+   PAGINATION STYLES
+   ============================================= */
+
+/* Pagination customization */
+.pagination .page-link {
+    border-radius: 6px;
+    margin: 0 2px;
+    border: 1px solid #dee2e6;
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+.pagination .page-link:hover {
+    background-color: #e9ecef;
+    color: #0a58ca;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+/* =============================================
+   MODAL STYLES
+   ============================================= */
+
+/* Modal header customization */
+.modal-header {
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-content {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* =============================================
+   FOOTER STYLES
+   ============================================= */
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+}
+
+/* =============================================
+   UTILITY CLASSES
+   ============================================= */
+
+/* Empty state styling */
+.text-center.py-5 i.fa-box-open {
+    color: #adb5bd;
+    opacity: 0.6;
+}
+
+/* Form text (help text under inputs) */
+.form-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* Required field indicator */
+.text-danger {
+    font-size: 0.9rem;
+}
+
+/* =============================================
+   RESPONSIVE DESIGN
+   ============================================= */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .table td, .table th {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+    
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+    }
+    
+    h1.h3 {
+        font-size: 1.4rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 767.98px) {
+    .d-flex.flex-wrap.gap-2 {
+        gap: 0.5rem !important;
+    }
+    
+    .card-header h5 {
+        font-size: 0.95rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* =============================================
+   PRINT STYLES
+   ============================================= */
+
+/* Hide unnecessary elements when printing */
+@media print {
+    .navbar,
+    .btn,
+    .modal,
+    footer,
+    .pagination,
+    .no-print {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    
+    body {
+        background-color: #fff;
+    }
+}
